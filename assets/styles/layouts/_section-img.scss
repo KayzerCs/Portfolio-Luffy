@@ -1,0 +1,56 @@
+.section-img {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+
+    @media screen and (max-width: 1220px) {
+        height: 200vh;
+    }
+
+    .container-img {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        @media screen and (max-width: 1220px) {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+        }
+
+        .part-left{
+            @include childCenter;
+
+            img {
+                width: 90%;
+                min-width: 450px;
+                max-width: 520px;
+                height: 80%;
+                min-height: 250px;
+                max-height: 250px;
+                border-radius: 5%;
+
+                @media screen and (max-width: 1220px) {
+                    height: 100%;
+                    width: 60%;
+                }
+            }
+        }
+
+        .part-right {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            h1 {
+                margin-top: 20px;
+                font-family: $font3;
+            }
+
+            p {
+                margin-bottom: 25px;
+                font-size: 15px;
+            }
+        }
+    }
+}

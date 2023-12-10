@@ -1,0 +1,55 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+
+    h1 {
+        font-family: $font2;
+        font-size: 45px;
+        font-weight: 500;
+
+        @media screen and (max-width: 820px) {
+            font-size: 35px;
+        }
+
+        @media screen and (max-width: 734px) {
+                margin-top: 40px;
+        }
+
+        i {
+            color: $red;
+            font-size: 25px;
+            margin-right: 10px;
+
+            @media screen and (max-width: 820px) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-weight: 800;
+
+        li {
+            margin-left: 40px;
+            font-size: 15px;
+            cursor: pointer;
+
+            @media screen and (max-width: 820px) {
+                margin-top: 5px;
+            }
+
+            &:hover {
+                color: $red
+            }
+            
+            span {
+                margin-left: 3px;
+            }
+        }
+    }
+}

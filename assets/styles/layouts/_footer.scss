@@ -1,0 +1,11 @@
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+
+    p {
+        font-family: $font2;
+        font-size: 25px;
+        font-weight: 600;
+    }
+}

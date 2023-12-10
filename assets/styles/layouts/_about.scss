@@ -1,0 +1,21 @@
+.about {
+    margin-top: 50px;
+
+    h4 {
+        font-family: $font3;
+        font-weight: 800;
+        font-size: 30px;
+        color: $red;
+    }
+
+    p {
+        margin-top: 15px;
+        max-width: 1000px;
+    }
+
+    img {
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+    }
+}

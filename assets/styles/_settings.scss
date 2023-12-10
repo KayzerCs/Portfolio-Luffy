@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(/assets/font/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: "Allura";
+    src: url(/assets/font/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "Lobster";
+    src: url(/assets/font/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(/assets/font/Merriweather-Bold.ttf);
+}
+
+$font1: Roboto, serif;
+$font2: Allura, serif;
+$font3: Lobster, serif;
+$font4: Merriweather, serif;
+$black: #212529;
+$red: rgb(182, 20, 20);
+$grey: #7d7171ac;
+$white: #efe7e5;
+
+@mixin childCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    font-family: $font1, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background: $white;
+    color: $black;
+    font-family: $font1, sans-serif;
+    margin: 3% 10%;
+}
+
+p {
+    line-height: 25px;
+}
